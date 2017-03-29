@@ -1,0 +1,23 @@
+<%- include ./part/header.ejs %>
+
+<% if(typeof title !== 'undefined'){ %>
+<h2><%= title %></h2>
+<% }else{ %>
+<h2>Dit is gek..</h2>
+<% }; %>
+
+<% console.log(data) %>
+
+<ul class="strains-list">
+    <% for(var i = 0;i<data.data.length; i++) { %>
+
+    <li class="strains-list__item">
+        <a href="/strains/<%= data.data[i].ucpc %>">
+            <%= data.data[i].name %>
+        </a>
+    </li>
+
+    <% }; %>
+</ul>
+
+<%- include ./part/footer.ejs %>

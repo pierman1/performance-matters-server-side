@@ -1,0 +1,17 @@
+{
+  "name": "Amsterdam Strains",
+  "short_name": "AS",
+  "start_url": "/about",
+  "display": "standalone",
+  "theme_color": "#6f5499",
+  "background_color": "#ffffff",
+  "icons": [{
+    "src": "/app-icons/favicon.ico",
+    "sizes": "32x32",
+    "type": "image/ico"
+  }, {
+    "src": "/app-icons/apple-touch-icon.png",
+    "sizes": "180x180",
+    "type": "image/png"
+  }]
+}

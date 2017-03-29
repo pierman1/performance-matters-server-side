@@ -1,0 +1,27 @@
+<% include ./part/header.ejs%>
+
+<% if(typeof title !== 'undefined'){ %>
+<h1><%= title %></h1>
+<% }else{ %>
+<h2>Dit is gek..</h2>
+<% }; %>
+
+<from class="hidden search-form">
+    <input type="text">
+    <input type="submit">
+</from>
+
+<noscript>
+    <form action="/results/?strain=value" method="GET">
+        <input type="text" name="strain" class="enter">
+        <input type="submit" value="click">
+    </form>
+</noscript>
+
+<p class="no-input-message hidden">Please fill in the above input field</p>
+
+<ul id="strains-list" class="strains-list strains-list--results">
+
+</ul>
+
+<% include ./part/footer.ejs %>

@@ -1,0 +1,26 @@
+{
+  "name": "amsterdam-strains",
+  "version": "0.0.1",
+  "description": "amsterdam strange",
+  "private": true,
+  "main": "app.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "ejs": "^2.5.6",
+    "express": "^4.15.2",
+    "mongodb": "^2.2.25",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {
+    "browserify": "^14.1.0"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "build": "browserify search.js -o public/js/bundle.js"
+  },
+  "keywords": [],
+  "author": "Pierre Bleeker",
+  "license": "MIT"
+}

@@ -1,0 +1,24 @@
+<!doctype html>
+
+<html lang="nl">
+
+<head>
+	<meta charset="UTF-8">
+	<% if(typeof title !== 'undefined'){ %>
+		<title><%= title %></title>
+	<% }else{ %>
+		<title>Dit is gek...</title>
+	<% }; %>
+	<link rel="manifest" href="/manifest.json">
+	<link rel="stylesheet" href="/css/main.css">
+	<script src="/js/bundle.js" defer></script>
+
+</head>
+<body>
+
+<header class="header">
+	<h1 class="header__logo logo">Amsterdam Strains</h1>
+	<% include nav.ejs %>
+</header>
+
+<main class="main-container">
