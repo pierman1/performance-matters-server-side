@@ -1,24 +1,31 @@
 {
   "name": "amsterdam-strains",
-  "version": "0.0.1",
-  "description": "amsterdam strange",
+  "version": "1.0.0",
+  "description": "amsterdam strains",
   "private": true,
-  "main": "app.js",
+  "main": "server.js",
   "directories": {
     "test": "test"
   },
   "dependencies": {
+    "compression": "^1.6.2",
+    "critical": "^0.8.4",
     "ejs": "^2.5.6",
     "express": "^4.15.2",
+    "fontfaceobserver": "^2.0.9",
     "mongodb": "^2.2.25",
-    "path": "^0.12.7"
+    "path": "^0.12.7",
+    "request": "^2.81.0"
   },
   "devDependencies": {
-    "browserify": "^14.1.0"
+    "browserify": "^14.1.0",
+    "ngrok": "^2.2.6"
   },
   "scripts": {
     "start": "node server.js",
-    "build": "browserify search.js -o public/js/bundle.js"
+    "build": "browserify ./public/js/collection/app.js ./public/js/collection/search.js  -o ./public/js/bundle.js ",
+    "critical": "critical views/index.ejs --base public/css > critical.css",
+    "expose": "ngrok http 3000"
   },
   "keywords": [],
   "author": "Pierre Bleeker",

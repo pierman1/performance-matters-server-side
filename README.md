@@ -8,7 +8,6 @@
 
 **About**
 
-
 ## Get it running
 
 Follow the next steps to install the application.

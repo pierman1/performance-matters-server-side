@@ -1,7 +1,3 @@
-var request = require('request');
-var ejs = require('ejs');
-var fs = require('fs');
-
 
 if (window.location.pathname === '/search') {
 
@@ -28,6 +24,7 @@ if(searchSubmit) {
 
 
         //Lets try to make a HTTP GET
+
         request({
 
             url: 'https://www.cannabisreports.com/api/v1.0/strains/search/' + userInput,

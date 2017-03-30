@@ -8,6 +8,11 @@ var compression = require('compression');
 var path 	 = require('path');
 var port	 = 3000;
 
+var compression = require('compression');
+
+// compress all responses
+app.use(compression());
+
 // var loader = require('./public/js/loader.js');
 
 // gzip using compression
