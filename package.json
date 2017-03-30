@@ -23,7 +23,7 @@
   },
   "scripts": {
     "start": "node server.js",
-    "build": "browserify ./public/js/collection/app.js ./public/js/collection/search.js  -o ./public/js/bundle.js ",
+    "build": "browserify ./public/js/collection/app.js ./public/js/collection/connection.js ./public/js/collection/search.js  -o ./public/js/bundle.js ",
     "critical": "critical views/index.ejs --base public/css > critical.css",
     "expose": "ngrok http 3000"
   },

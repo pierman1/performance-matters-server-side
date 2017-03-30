@@ -10,18 +10,19 @@
 		<title>Dit is gek...</title>
 	<% }; %>
 
-	<style>@font-face{font-family:'Inconsolata';font-style:normal;font-weight:400;src:local('Inconsolata Regular'),local('Inconsolata-Regular'),url(https://fonts.gstatic.com/s/inconsolata/v15/BjAYBlHtW3CJxDcjzrnZCJ0EAVxt0G0biEntp43Qt6E.ttf) format('truetype')}body{background-color:#333540;margin:0;padding:0;color:#E7E7EB;font-family:'Source Sans',sans-serif;background-image:url(../img/bong.svg);background-repeat:no-repeat;background-position:bottom right;height:100vh}h1{font-family:'Inconsolata',serif;color:#E8946F;margin:0}header{color:#fff;padding:1rem;background-repeat:no-repeat;max-width:35rem;padding:1rem;margin:0 auto;position:relative;margin:1rem auto}nav{width:100%;position:relative;z-index:2}nav ul{display:flex;flex-wrap:wrap}nav ul li{text-decoration:underline}nav a{color:#fff}ul{list-style:none;margin:0;padding:0;color:#fff}ul li{padding:1rem}ul li a{text-decoration:none;color:#fff}.header__logo{border-bottom:3px solid white;box-sizing:border-box;color:#fff;position:relative;z-index:2;width:max-content;text-transform:uppercase}.header__logo:after{content:'';background-image:url(../img/bong-white.svg);background-repeat:no-repeat;background-size:100%;width:.8rem;height:1.4rem;display:inline-block;margin-left:.5rem}p{padding:0;line-height:1.5;font-weight:200}.main-container{max-width:35rem;padding:1rem;margin:1rem auto;position:relative}</style>
+	<style>body{font-family:'Inconsolata';font-style:normal;font-weight:400;src:local('Inconsolata Regular'),local('Inconsolata-Regular'),url(https://fonts.gstatic.com/s/inconsolata/v15/BjAYBlHtW3CJxDcjzrnZCJ0EAVxt0G0biEntp43Qt6E.ttf) format('truetype')}body{background-color:#333540;margin:0;padding:0;color:#E7E7EB;font-family:'Source Sans',sans-serif;height:100vh}h1{font-family:'Inconsolata',serif;color:#E8946F;margin:0}header{color:#fff;padding:1rem;background-repeat:no-repeat;max-width:35rem;padding:1rem;margin:0 auto;position:relative;margin:1rem auto}nav{width:100%;position:relative;z-index:2}nav ul{display:flex;flex-wrap:wrap}nav ul li{text-decoration:underline}nav a{color:#fff}ul{list-style:none;margin:0;padding:0;color:#fff}ul li{padding:1rem}ul li a{text-decoration:none;color:#fff}.header__logo{border-bottom:3px solid white;box-sizing:border-box;color:#fff;position:relative;z-index:2;width:max-content;text-transform:uppercase}.main-container{max-width:35rem;padding:1rem;margin:1rem auto;position:relative}.hidden{display:none;}.strains-list{display:flex;flex-wrap:wrap;margin-top:1rem}</style>
 
 	<link rel="manifest" href="/manifest.json">
-	<link href="https://fonts.googleapis.com/css?family=Inconsolata|Source+Sans+Pro" rel="stylesheet">
 
 </head>
 <body>
 
 <header class="header">
 	<h1 class="header__logo logo">Amsterdam Strains</h1>
+    <div id="offline-symbol"><img src="images/wifi.svg" alt="no-wifi image"></div>
+
 	<% include nav.ejs %>
+
 </header>
 
 <main class="main-container">
-

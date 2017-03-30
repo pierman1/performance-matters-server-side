@@ -4,13 +4,12 @@ body {
   padding: 0;
   color: #E7E7EB;
   font-family: 'Source Sans', sans-serif;
-  background-image: url("../img/bong.svg");
   background-repeat: no-repeat;
   background-position: bottom right;
   height: 100vh; }
 
 h1, h2, h3, h4, h5 {
-  font-family: 'Inconsolata', serif;
+  font-family: 'Inconsolata', sans-serif;
   color: #E8946F;
   margin: 0; }
 
@@ -64,7 +63,6 @@ ul, ol {
   text-transform: uppercase; }
   .header__logo:after {
     content: '';
-    background-image: url("../img/bong-white.svg");
     background-repeat: no-repeat;
     background-size: 100%;
     width: .8rem;
@@ -118,14 +116,14 @@ p {
     content: '>';
     display: inline-block; }
 
-input[type="text"], input[type="button"] {
+input[type="text"], input[type="button"], input[type='submit'] {
   background-color: transparent;
   border: .2rem solid #fff;
   font-size: 1rem;
   padding: .5rem;
   color: #fff;
   transition: .3s; }
-  input[type="text"]:hover, input[type="text"]:focus, input[type="button"]:hover, input[type="button"]:focus {
+  input[type="text"]:hover, input[type='submit']:hover, input[type='submit']:focus, input[type="text"]:focus, input[type="button"]:hover, input[type="button"]:focus {
     background-color: #fff;
     color: #333540; }
 
@@ -161,5 +159,17 @@ section {
 .hidden {
   display: none; }
 
-:checked + label {
-  color: red; }
+#offline-symbol {
+  position: absolute;
+  right: 2rem;
+  color: #000;
+  background-color: #fff;
+  border-radius: 2px;
+  padding: .3rem .5rem;
+  top: 1rem;
+}
+
+
+#offline-symbol > img {
+  width: 1rem;
+}

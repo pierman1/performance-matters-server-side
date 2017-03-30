@@ -15,6 +15,15 @@ if ( 'serviceWorker' in navigator ) {
 
 }
 },{}],2:[function(require,module,exports){
+var online = navigator.onLine;
+var offlineSymbol = document.getElementById('offline-symbol');
+
+if(!online) {
+    offlineSymbol.classList.remove('hidden');
+} else {
+    offlineSymbol.classList.add('hidden');
+}
+},{}],3:[function(require,module,exports){
 
 if (window.location.pathname === '/search') {
 
@@ -39,18 +48,15 @@ if(searchSubmit) {
         var userInput = document.querySelector('[type="text"]').value;
         console.log(userInput);
 
-
         //Lets try to make a HTTP GET
         var url = 'https://www.cannabisreports.com/api/v1.0/strains/search/' + userInput;
 
+        var request = new XMLHttpRequest();
+        request.open("GET", url, false);
 
-
-        var xhReq = new XMLHttpRequest();
-        xhReq.open("GET", url, false);
-
-        xhReq.send(null);
-        var data = JSON.parse(xhReq.responseText);
-        console.log(data); // Shows "15"
+        request.send(null);
+        var data = JSON.parse(request.responseText);
+        console.log(data);
 
         var list = document.getElementsByClassName('strains-list')[0];
         console.log(list);
@@ -74,4 +80,4 @@ if(searchSubmit) {
     });
 
 }
-},{}]},{},[1,2]);
+},{}]},{},[1,2,3]);
