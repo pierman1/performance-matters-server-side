@@ -154,5 +154,9 @@ app.get('*', function(req,res) {
 	})
 });
 
-app.listen(port);
-console.log('App started on port: ' + port);
+http.listen(8888, function () {
+// http.listen(process.env.PORT || 5000, function () {
+
+    console.log('listening on *:8888');
+
+});
