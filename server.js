@@ -6,7 +6,6 @@ var bodyParser = require('body-parser')
 var compression = require('compression');
 
 var path 	 = require('path');
-var port	 = 4040;
 
 var compression = require('compression');
 
